@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Byte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bright Byte</h1>
+    </header>
+    <main>
+        <section id="name-entry">
+            <h2>Welcome to Bright Byte!</h2>
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username">
+            <button onclick="selectLanguage()">Continue</button>
+        </section>
+        <section id="language-selection" style="display:none;">
+            <h2>Choose a language to learn</h2>
+            <select id="language-select">
+                <option value="english">English</option>
+                <!-- Add options for other languages -->
+            </select>
+            <button onclick="showTranslations()">Submit</button>
+        </section>
+        <section id="word-translations" style="display:none;">
+            <h2>Word Translations</h2>
+            <!-- Translations will be populated dynamically using JavaScript -->
+            <ul id="translations-list">
+                
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
